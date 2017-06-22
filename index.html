@@ -1,0 +1,28 @@
+<html>
+<head>
+  <script type="text/javascript" src="gps.js"></script>
+  <link href="gps.css" rel="stylesheet" type="text/css">
+</head>
+<body onload = "updateCache()">
+<h1 id="location">Geocaching</h1>
+
+<div id="yorkmap"> </div>
+  <img id="map" src="YUMap2.png" height="685" width="954">
+<div></div>
+  <img id="me" src="me.gif">
+<div></div>
+  <img id="target" src="target.gif">
+
+
+<p>
+<button id="togglegps" onclick="togglegps()">Start GPS</button>
+Lattitude <span id="latitude"> ???? </span>
+Longitude <span id="longitude"> ???? </span>
+Now <span id="now"> ???? </span>
+</p>
+<p>
+<div id="debug"> debug </div>
+<button onclick="updateCache()">geocache</button>
+</p>
+</body>
+</html>
